@@ -1,0 +1,52 @@
+get http://localhost:3000/
+
+###
+// Adding
+POST http://localhost:5000/api/add
+Content-Type: application/json
+
+{
+    "title": "test12",
+    "description": "itemArray adding - adding objects with push - checking with default",
+    "itemList": [
+        {
+            "name": "item1"
+        },
+        {
+            "name": "item2",
+            "checked": true
+        }
+    ],
+    "tags": [
+        "Funny", "weird", "sad"
+    ]
+}
+
+###
+// get all the checkList
+GET http://localhost:5000/api/all
+
+###
+//geting specific ID
+GET http://localhost:5000/api/5f4f24be4bb9e31f24ef5c40
+###
+//failing - need to check null return
+GET http://localhost:3000/5f4f2ac9b528
+
+###
+// DELETE - with fake id
+DELETE http://localhost:3000/123
+
+###
+DELETE http://localhost:5000/api/delete/5f4f3254643ab4318c410c4b
+
+###
+//update based on object ID
+PUT http://localhost:5000/api/5f4f3649e48b462190deacbc
+Content-Type: application/json
+
+{
+    "id": "5f4f3649e48b462190deacbc",
+    "title": "test5.3 - newUpdateName",
+    "description": "this is meant to be updated - UPDATED DESCRIPTION"
+}
