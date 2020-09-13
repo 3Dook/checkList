@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// eslint-disable-next-line
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navbar from "./components/navbar.component"
+import home from "./components/home.component"
+import findCheckList from "./components/findCheckList.component"
+import createCheckList from "./components/createCheckList.component"
+import editCheckList from "./components/editCheckList.component"
+import deleteCheckList from "./components/deleteCheckList.component"
+import aboutMe from "./components/aboutMe.component"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <div className="container">
+        <Navbar />
+        <br/>
+        <Route path="/" exact component={home}/>
+        <Route path="/find" component={findCheckList}/>
+        <Route path="/create" component={createCheckList}/>
+        <Route path="/edit/:id" component={editCheckList}/>
+        <Route path="/delete" component={deleteCheckList}/>
+        <Route path="/aboutMe" component={aboutMe}/>
+        </div>
+      </Router>
   );
 }
 
