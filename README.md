@@ -1,5 +1,15 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+### To get started
+run 'npm install' to install necessary dependencies in root folder.
+
+### start server 
+run 'npm run serverStart' to start up server on localhost:5000
+
+### Start Client
+run 'npm start' to start client on localhost:3000
+
 ## Available Scripts
 
 In the project directory, you can run:

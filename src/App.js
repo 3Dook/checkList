@@ -8,7 +8,6 @@ import home from "./components/home.component"
 import findCheckList from "./components/findCheckList.component"
 import createCheckList from "./components/createCheckList.component"
 import editCheckList from "./components/editCheckList.component"
-import deleteCheckList from "./components/deleteCheckList.component"
 import aboutMe from "./components/aboutMe.component"
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Route path="/find" component={findCheckList}/>
         <Route path="/create" component={createCheckList}/>
         <Route path="/edit/:id" component={editCheckList}/>
-        <Route path="/delete" component={deleteCheckList}/>
         <Route path="/aboutMe" component={aboutMe}/>
         </div>
       </Router>

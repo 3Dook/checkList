@@ -30,9 +30,7 @@ export default class Navbar extends Component {
             <div className="navbar-nav">
               <Link to="/find" className="nav-link">FIND</Link>
               <Link to="/create" className="nav-link">CREATE</Link>
-        <Link to="/edit" className="nav-link">EDIT</Link>
-        <Link to="/delete" className="nav-link"> DELETE</Link>
-        <Link to="/aboutMe" className="nav-link">ABOUTME</Link>
+              <Link to="/aboutMe" className="nav-link">ABOUTME</Link>
             </div>
         </div>
         </nav>
