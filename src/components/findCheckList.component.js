@@ -58,7 +58,11 @@ export default class findCheckList extends Component {
     return (
       <div> 
         <div>
-          <p>You are on the find ALL PAGE </p>
+          <h1>FIND</h1>
+          <p>SEARCH for any checkList</p>
+        </div>
+        <div>
+          SEARCH BAR GOES HERE
         </div>
         <div>
          {this.contentTable()}
